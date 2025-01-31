@@ -27,55 +27,55 @@ async function checkWeather() {
 
     let weatherCondition = data.weather[0].icon;
     if (weatherCondition.includes("01d") || weatherCondition.includes("01n")) {
-      weatherIcon.src = "../images/clear.png";
+      weatherIcon.src = "./images/clear.png";
       weatherIcon.alt = "Clear Sky";
     } else if (
       weatherCondition.includes("02d") ||
       weatherCondition.includes("02n")
     ) {
-      weatherIcon.src = "../images/mist.png";
+      weatherIcon.src = "./images/mist.png";
       weatherIcon.alt = "Few Clouds";
     } else if (
       weatherCondition.includes("03d") ||
       weatherCondition.includes("03n")
     ) {
-      weatherIcon.src = "../images/clouds.png";
+      weatherIcon.src = "./images/clouds.png";
       weatherIcon.alt = "Scattered Clouds";
     } else if (
       weatherCondition.includes("04d") ||
       weatherCondition.includes("04n")
     ) {
-      weatherIcon.src = "../images/drizzle.png";
+      weatherIcon.src = "./images/drizzle.png";
       weatherIcon.alt = "Broken Clouds";
     } else if (
       weatherCondition.includes("09d") ||
       weatherCondition.includes("09n")
     ) {
-      weatherIcon.src = "../images/rain.png";
+      weatherIcon.src = "./images/rain.png";
       weatherIcon.alt = "Shower Rain";
     } else if (
       weatherCondition.includes("10d") ||
       weatherCondition.includes("10n")
     ) {
-      weatherIcon.src = "../images/rain.png";
+      weatherIcon.src = "./images/rain.png";
       weatherIcon.alt = "Rain";
     } else if (
       weatherCondition.includes("11d") ||
       weatherCondition.includes("11n")
     ) {
-      weatherIcon.src = "../images/snow.png";
+      weatherIcon.src = "./images/snow.png";
       weatherIcon.alt = "Thunderstorm";
     } else if (
       weatherCondition.includes("13d") ||
       weatherCondition.includes("13n")
     ) {
-      weatherIcon.src = "../images/snow.png";
+      weatherIcon.src = "./images/snow.png";
       weatherIcon.alt = "Snow";
     } else if (
       weatherCondition.includes("50d") ||
       weatherCondition.includes("50n")
     ) {
-      weatherIcon.src = "../images/mist.png";
+      weatherIcon.src = "./images/mist.png";
       weatherIcon.alt = "Mist";
     }
   } catch {
